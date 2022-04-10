@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klawiatura ekranowa</title>
+</head>
+<body>
+    <script>
+        var x,y;
+        var l;
+        for(x=26;x<=26;x++)
+        {
+            l=65
+            for(y=1;y<=x;y++)
+            {
+                const btn = document.createElement('button');
+                document.body.appendChild(btn);
+                btn.innerText = (String.fromCharCode(l));
+                btn.addEventListener('click', function(event) {
+                    alert('zgaduje')
+                });
+                l++
+            } 
+        }
+    </script>
+</body>
+</html>
