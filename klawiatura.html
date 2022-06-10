@@ -18,8 +18,9 @@
                 const btn = document.createElement('button');
                 document.body.appendChild(btn);
                 btn.innerText = (String.fromCharCode(l));
-                btn.addEventListener('click', function(event) {
-                    alert('zgaduje')
+                btn.addEventListener('click', function event() {
+                    console.log(btn.innerText)
+                    return event;
                 });
                 l++
             } 
